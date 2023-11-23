@@ -1,0 +1,21 @@
+{
+  "name": "bdall",
+  "version": "1.0.0",
+  "description": "contient la bdd du site de afif",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node serveur.js",
+    "lint": "eslint *.js"
+  },
+  "author": "Jean-Marc Jorite",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "swiper": "^11.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.54.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
