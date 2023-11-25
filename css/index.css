@@ -45,9 +45,14 @@ nav ul li{
   font-size: 2vw;
 }   
 
+.navbar{
+  width: 1500px;
+  height: 200px;
+}
 
 a{
-  color: #ffffff;  
+  color: #ffffff; 
+  text-decoration: none; 
 }
 
 h1{
@@ -268,4 +273,22 @@ footer p{
 #allCompetence{
   margin-top: 90rem;
   
+}
+
+
+.underline {
+  background-image: linear-gradient(to left, currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-size: 1% 0px;
+  background-position: 0% 100%;
+  transition: background-size 1s ease, background-position 1s ease;
+}
+
+.underline:hover {
+  background-size: 100% 2px;
+  background-position: 0% 100%;
+}
+
+.underlineActive{
+  text-decoration: underline;
 }

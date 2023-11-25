@@ -6,41 +6,40 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/contact.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script src="mail.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script> 
+    <script src="mail.js" defer></script>
 </head>
 <body>
-    <div class="container">
     <nav class="navbar">
         <img src="" alt="">
-        <ul class="element" >
-            <li class="active">
-              <a href="">Acceuil</a>
-              <div class="underline" style="transform: translateX(0px); transition: all 0.3s ease 0s;"></div>
+        <ul>
+            <li>
+              <a class="underline" href="index.html">Acceuil</a>
             </li>
-            <li class="">
-              <a href="">Projets</a>
-              <div class="underline" style="transform: translateX(-105%);""></div>
+            <li>
+              <a class="underline" href="">Projets</a>
             </li>
-            <li class="">
-              <a href="">Contact</a>
-              <div class="underline" style="transform: translateX(-105%);"></div>
+            <li >
+              <a class="underlineActive " href="contact.html">Contact</a>
             </li>
         </ul>
     </nav>
 
     <h1>Me Contacter</h1>
-    <form>
+    <form id="myForm" onsubmit="sendEmail()">
         <div>
         <h2>Laisser un message</h2>
         <p>j'y répondrais rapidement !</p>
     </div>
+        <label for="name"> Nom</label>
         <input type="text" id="nom" name="nom" placeholder="Quel est votre nom ?">
+        <label for="email">Email</label>
         <input type="email" id="email" name="email" placeholder="Votre adresse Mail ?">
+        <label for="message">Message</label>
         <textarea name="message" id="message" cols="70" rows="18" placeholder="Votre message..."></textarea>
-        <button id="envoie">Envoyer</button>
+        <button id="submit" >Envoyer</button>
     </form>
 
     
-</div>
 </body>
 </html>
